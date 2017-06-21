@@ -1,7 +1,7 @@
-const frontmatter = require('front-matter');
+const fastmatter = require('fastmatter');
 
 module.exports = function (source) {
   this.cacheable && this.cacheable();
 
-  return JSON.stringify(frontmatter(source));
+  return JSON.stringify(fastmatter(source));
 }

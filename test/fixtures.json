@@ -1,0 +1,24 @@
+{
+	"parse string values in frontmatter": [
+		{
+			"input": "---\ntitle: My Post\n---",
+			"output": {
+				"attributes": {
+					"title": "My Post"
+				},
+				"body": ""
+			}
+		}
+	],
+	"parse arrays in frontmatter": [
+		{
+			"input": "---\ncategories: [blog, testing, frontmatter]\n---",
+			"output": {
+				"attributes": {
+					"categories": [ "blog", "testing", "frontmatter" ]
+				},
+				"body": ""
+			}
+		}
+	]
+}

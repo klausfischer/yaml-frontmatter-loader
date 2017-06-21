@@ -4,7 +4,7 @@
   "description": "Yaml frontmatter loader for webpack",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava test/index.js --verbose"
   },
   "keywords": [
     "webpack",
@@ -14,7 +14,7 @@
   "author": "eldh",
   "license": "MIT",
   "dependencies": {
-    "front-matter": "^2.1.2"
+    "fastmatter": "^2.0.1",
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/webpack-contrib/yaml-frontmatter-loader",
   "bugs": {
     "url": "https://github.com/webpack-contrib/yaml-frontmatter-loader/issues"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1"
   }
 }
